@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Predictor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        body{
+            background-color: #222222;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        img{
+            width: 100%;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .container .img{
+            width: 100%;
+        }
+
+        .container .info{
+            width: 100%;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .container .info h1{
+            text-align: center;
+            color: #ffc107;
+        }
+        .container .info p{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            padding: 10px 25px;
+            background-color: #000000;
+            cursor: pointer;
+            border: none;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .footer{
+            text-align: center;;            
+        }
+        .footer a{
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .footer-mob{
+            display: none;
+        }
+
+        @media(max-width: 676px){
+            .container{
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            .container .info{
+                width: 80%;
+                margin: auto;
+            }
+            .footer{
+                display: none;
+            
+            }
+            .footer-mob{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 15%;
+            }
+        }
+
+    </style>
+
+
+    <div class="container">
+        <div class="img">
+            <img src="./images/images.jpeg" alt="">
+            <div class="footer">
+                <p>Frontend - <i class="fa fa-github"></i> Justin Tham </a> | <a href="https://github.com/justin1102/FYP-FrontEnd.git">Source code</a></p>
+                <p>Backend - <i class="fa fa-github"></i> Justin Tham</a> | <a href="https://github.com/aaadddiii/heart-api">Source code</a></p>
+                
+            </div>
+        </div>
+        <div class="info">
+            <h1>Heart Disease Predictor</h1>
+            <p>This is a heart disease predictor build using machine learning</p>
+            <a href="main.html"><button>Predict</button></a>
+        </div>
+        <div class="footer footer-mob">
+            <p>Frontend - <a href="https://github.com/rawho/"><i class="fa fa-github"></i> Rahul T </a></p>
+            <p>Backend - <a href="https://github.com/aaadddhiii/"><i class="fa fa-github"></i> Adithya Kurien Peter</a></p>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
